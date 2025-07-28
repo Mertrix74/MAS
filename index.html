@@ -1,38 +1,23 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mertrix74</title>
-</head>
-<body>
-  <h1>Hoş Geldiniz!</h1>
-  <p>Bu site <strong>Mertrix74</strong> tarafından yayınlanmıştır.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gerçek Dünya Haritası</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <style>
-    #map { height: 90vh; width: 100%; }
-  </style>
-</head>
-<body>
-  <h1>Gerçek Dünya Haritası</h1>
-  <div id="map"></div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    var map = L.map('map').setView([39.925533, 32.866287], 5); // Türkiye koordinatları ve zoom seviyesi
+  <!-- Arsa 1 -->
+  <div style="border: 2px solid #ccc; border-radius: 15px; width: 300px; padding: 10px; text-align: center; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <img src="images/arsa1.jpg" alt="Spawn Yanı Arsa" style="width: 100%; border-radius: 10px;">
+    <h3>Spawn Yanı Arsa</h3>
+    <p>Fiyat: 2500 Coin</p>
+    <button style="padding: 10px 20px; background-color: crimson; color: white; border: none; border-radius: 8px; cursor: default;">
+      Satın Al
+    </button>
+  </div>
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-  </script>
-</body>
-</html>
+  <!-- Arsa 2 -->
+  <div style="border: 2px solid #ccc; border-radius: 15px; width: 300px; padding: 10px; text-align: center; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <img src="images/arsa2.jpg" alt="Dağ Manzaralı Arsa" style="width: 100%; border-radius: 10px;">
+    <h3>Dağ Manzaralı Arsa</h3>
+    <p>Fiyat: 1800 Coin</p>
+    <button style="padding: 10px 20px; background-color: green; color: white; border: none; border-radius: 8px; cursor: default;">
+      Satın Al
+    </button>
+  </div>
+
+</div>
